@@ -5,5 +5,16 @@
   // The site: everything in public/ is uploaded and served as static assets.
   // There is no "main" key, because this is an assets-only Worker with no script.
   // If the page is rebuilt in Astro, change this to "./dist".
-  "assets": { "directory": "./public" }
+  "assets": { "directory": "./public" },
+  // The site's domain. Declared here so the repo stays the source of truth:
+  // routes added only in the dashboard are overridden on the next deploy.
+  "routes": [
+    { "pattern": "fistmeetsglass.com", "custom_domain": true },
+    { "pattern": "www.fistmeetsglass.com", "custom_domain": true }
+  ],
+  // The custom domain is the only address: no *.workers.dev production or
+  // preview URLs. workers_dev already defaults to false once routes exist;
+  // it is set explicitly so the intent survives any change to that default.
+  "workers_dev": false,
+  "preview_urls": false
 }
