@@ -1,0 +1,9 @@
+// Cloudflare Workers settings for FistMeetsGlass. Cloudflare reads this on every deploy.
+{
+  "name": "fistmeetsglass",
+  "compatibility_date": "2026-10-10",
+  // The site: everything in public/ is uploaded and served as static assets.
+  // There is no "main" key, because this is an assets-only Worker with no script.
+  // If the page is rebuilt in Astro, change this to "./dist".
+  "assets": { "directory": "./public" }
+}
