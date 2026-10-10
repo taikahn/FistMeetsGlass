@@ -1,0 +1,2 @@
+# Wrangler's local cache directory (created by `wrangler dev` and `--dry-run`).
+.wrangler/
