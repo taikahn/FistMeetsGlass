@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fist Meets Glass</title>
-<meta name="description" content="Fist Meets Glass. Debut EP release listening party, Saturday, October 17th at St Paul Tavern, Denver.">
+<meta name="description" content="Fist Meets Glass.">
 <meta name="theme-color" content="#050506">
 <style>
 /* League Spartan (SIL Open Font License), embedded so the page is one file */
@@ -26,26 +26,21 @@ h1,p{margin:0}
 .bars span{display:block;background:var(--white);padding:.15em .25em 0 .19em}
 .bars span b{display:block;font-weight:inherit;transform:skewX(-11deg)}
 h1.bars{font-size:clamp(46px,min(12vw,13.5vh),128px)}
-.sub{margin-top:1.1em;font-weight:700;font-size:clamp(15px,2.6vw,26px);letter-spacing:.13em}
-.event{font-weight:700;font-size:clamp(14px,2.3vw,24px);line-height:1.5;letter-spacing:.13em}
-.event .bars{font-size:clamp(26px,min(6vw,6.5vh),60px);margin-bottom:.45em;letter-spacing:-.01em}
-.event .guest{margin-top:.7em}
-.event .guest .bars{font-size:clamp(20px,min(4.4vw,4.6vh),44px);margin:.3em 0 0}
-.soon{margin-top:1.6em;opacity:.75}
+.listen{display:flex;flex-wrap:wrap;gap:.45em .55em;font-weight:800;font-size:clamp(18px,min(4vw,4.4vh),36px);letter-spacing:.02em}
+.listen a{display:block;background:var(--white);color:var(--black);text-decoration:none;line-height:1;padding:.32em .45em .14em .4em}
+.listen a b{display:block;font-weight:inherit;transform:skewX(-11deg)}
+.listen a:hover{background:#fff}
+.listen a:focus-visible{outline:3px solid var(--white);outline-offset:3px}
 </style>
 </head>
 <body>
 <header>
   <h1 class="bars" aria-label="Fist Meets Glass"><span><b>Fist</b></span><span><b>Meets</b></span><span><b>Glass</b></span></h1>
-  <p class="sub">Debut EP release</p>
 </header>
-<main class="event">
-  <p class="bars" aria-label="Listening party"><span><b>Listening</b></span><span><b>Party</b></span></p>
-  <p>St Paul Tavern, Denver</p>
-  <p>Saturday, October 17th</p>
-  <p>7pm(ish)</p>
-  <div class="guest"><p>Plus DJ set by</p><p class="bars"><span><b>SurpriseGuest</b></span></p></div>
-  <p class="soon">More soon</p>
-</main>
+<nav class="listen" aria-label="Listen to Fist Meets Glass">
+  <a href="https://open.spotify.com/artist/48fRVfOCwLxuw0juOVLOCr" target="_blank" rel="noopener"><b>Spotify</b></a>
+  <a href="https://music.apple.com/us/artist/fist-meets-glass/6805276847" target="_blank" rel="noopener"><b>Apple Music</b></a>
+  <a href="https://music.youtube.com/channel/UCeb-6V8shxBitNopq9DF4QA" target="_blank" rel="noopener"><b>YouTube Music</b></a>
+</nav>
 </body>
 </html>
