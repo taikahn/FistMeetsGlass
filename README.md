@@ -6,7 +6,9 @@ Promo page for the *Fist Meets Glass* debut EP listening party.
 
 - `public/index.html` — the entire site. One self-contained file: the CSS and the
   League Spartan font (SIL OFL, embedded as base64) are inlined. There is no
-  JavaScript, and the page makes no external requests.
+  JavaScript. The only thing loaded from outside is the YouTube player, and only
+  after a visitor presses Play. It plays every upload on the channel, newest
+  first, so new videos appear on the site without any edits.
 - `wrangler.jsonc` — Cloudflare Workers configuration. This is an assets-only
   Worker (no `main` script) that serves everything in `public/`.
 
@@ -22,11 +24,13 @@ npx wrangler login
 npx wrangler deploy
 ```
 
-To preview locally:
+To preview locally, run `dev` from Zide's Script Runner, or in a terminal:
 
 ```
-npx wrangler dev
+make dev
 ```
+
+Then open http://127.0.0.1:8787.
 
 ## If this grows past one page
 
